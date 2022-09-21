@@ -1,0 +1,130 @@
+:root {
+    --red: #dc3545;
+}
+
+
+/*! --------------------------- 1-NAVBAR ----------------------------*/
+.navbar {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: var(--red);
+}
+
+.nav-link {
+    color: black;
+    transition: color 0.5s;
+}
+
+/*! ----------------------------2-CAROUSEL --------------------------*/
+.carousel-item {
+    max-height: calc(100vh - 140px);
+}
+
+.carousel-item h5 {
+    color: var(--red);
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 3px black;
+}
+
+.carousel-item p {
+    text-shadow: 3px 3px 3px black;
+    font-weight: 600;
+
+}
+
+.carousel-item .btn {
+    width: 6rem;
+    margin-bottom: 1rem;
+}
+
+.carousel-indicators button {
+    background-color: var(--red) !important;
+    height: 0.4rem !important;
+    width: 3rem !important;
+    margin-right: 0.5rem !important;
+
+}
+
+/*! ----------------------------3-ABOUT-SECTİON ----------------------*/
+
+
+/*! ----------------------------4-INSTRUCTORS -------------------------*/
+section#instructors .card {
+    transition: transform 1s;
+}
+
+/* birden fazla oldugu için bu sekilde id gibi verdik  */
+section#instructors .card:hover {
+    transform: scale(1.05);
+}
+
+section#instructors .socials i {
+    transition: opacity 0.5s;
+}
+
+section#instructors .socials i:hover {
+    opacity: 0.5;
+}
+
+/*! ---------------------------STUDENTS- SECTİON --------------*/
+section#students img {
+    max-width: 400px;
+    min-width: 200px;
+
+}
+
+/*! ----------------------------6-COURSES -SECTİON ----------------------*/
+/* Sadece active olanının rengini kırmızı yapmak için bu şekilde yaptık  */
+section#courses .nav-link.active {
+    background-color: var(--red);
+
+}
+
+/* Buradada yazı renkleri activin dışın da yani her zaman beyaz olsun diye yaptık */
+section#courses .nav-link {
+    color: white;
+}
+
+
+/*! ----------------------------6-CONTACT -SECTİON ----------------------*/
+
+/*! ----------------------------7-FOOTER ------------------------*/
+
+
+footer i {
+    font-size: 2rem;
+    color: white;
+    padding: 0.5rem;
+    transition: color 1s;
+}
+
+footer i:hover {
+    color: var(--red);
+}
+
+/** ---------------------UP-BUTTON ----------------------------------*/
+.btn-up {
+    position: fixed;
+    /* sabit dursun dedik */
+    bottom: 1rem;
+    /* asagıdan 1 remlik sagdanda 1 remlik boluk vermiş olduk  */
+    right: 1rem;
+    /* yani oku en sağa götürdük right 1rem diyerek  */
+    color: white;
+    background-color: var(--red);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    /* oku aşağı indirip ortaya aldık , justcontent ilede asagı ineni ortaya aldık  */
+    justify-content: center;
+    /* display flexden jcontente kadar olan kısımla oku yuvarlıgın içine ortaladık  */
+    font-size: 1.3rem;
+    text-decoration: none;
+    /* okun altında cizgi vardı onu kaldırmak için bunu yaptık  */
+}
